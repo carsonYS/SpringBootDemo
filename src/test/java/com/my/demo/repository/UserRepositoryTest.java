@@ -53,7 +53,6 @@ public class UserRepositoryTest {
         int pageSize = 10;
         Pageable pageable = new PageRequest(pageNumber, pageSize, sort);
         userRepository.findAll(userExample, pageable);
-
     }
     @Test
     public void testBatchSave() {
