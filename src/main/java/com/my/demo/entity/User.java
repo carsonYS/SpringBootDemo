@@ -31,8 +31,6 @@ public class User {
     private Boolean isDelete;
 
     @ManyToMany
-    @JoinTable(joinColumns = { @JoinColumn(name = "user_id") }, inverseJoinColumns = {
-            @JoinColumn(name = "addresse_id") })
     private Set<Address> addresses;
 
     public Integer getUserId() {

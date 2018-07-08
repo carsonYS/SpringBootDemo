@@ -22,9 +22,6 @@ public class Address {
     @Column(name="is_delete")
     private Boolean isDelete;
 
-    @ManyToMany
-    private Set<User> users;
-
     public Integer getAddressId() {
         return addressId;
     }
