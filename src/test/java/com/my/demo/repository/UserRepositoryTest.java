@@ -3,15 +3,11 @@ package com.my.demo.repository;
 import com.my.demo.configuration.Entry;
 import com.my.demo.entity.Address;
 import com.my.demo.entity.User;
-import org.hibernate.sql.ordering.antlr.OrderingSpecification;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.*;
-import org.springframework.data.jpa.domain.Specification;
-import org.springframework.data.jpa.domain.Specifications;
-import org.springframework.data.querydsl.QPageRequest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.*;
