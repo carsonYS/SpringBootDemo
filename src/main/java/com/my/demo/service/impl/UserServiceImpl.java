@@ -3,6 +3,8 @@ package com.my.demo.service.impl;
 import com.my.demo.entity.User;
 import com.my.demo.repository.UserRepository;
 import com.my.demo.service.UserService;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
@@ -14,12 +16,14 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
+	private Logger logger = Logger.getLogger(UserServiceImpl.class);
 
 	@Autowired
 	private UserRepository userRepository;
 
 	@Override
 	public Page<User> test() {
+		logger.info(">>>>>>>>>>>>>>>>>>>");
 		User user = new User();
 		user.setIsDelete(false);
 		user.setNickname("小");
