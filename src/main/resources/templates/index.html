@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Spring boot demo</title>
+
+<meta name="description" content="Spring boot demo" />
+<meta name="content-type" content="text/html; charset=UTF-8" />
+<link rel="icon" type="image/x-icon" th:href="@{favicon.ico}" />
+<link rel="stylesheet" type="text/css" th:href="@{css/styles.css}" />
+
+</head>
+
+<body>
+	<span th:text="${hello}"></span>
+	<ul>
+		<li th:each="user:${page.content}">
+			<span th:text="${user.userId}"></span>-
+			<span th:text="${user.nickname}"></span>
+		</li>
+	</ul>
+</body>
+</html>

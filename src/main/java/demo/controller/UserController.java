@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping(value = "/user")
 public class UserController {
-    @Autowired
-    private UserService userServiceImpl;
+	@Autowired
+	private UserService userServiceImpl;
 
-    @RequestMapping(value = "/test")
-    @ResponseBody
-    public Page<User> test(){
-        return userServiceImpl.test();
-    }
+	@RequestMapping(value = "/test")
+	@ResponseBody
+	public Page<User> test() {
+		return userServiceImpl.test();
+	}
 }
